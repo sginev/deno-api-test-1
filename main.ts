@@ -1,10 +1,5 @@
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 import { resolveQuery } from "./lib/data.ts";
-import { load } from "https://deno.land/x/denv/mod.ts";
-
-Deno.stat( ".env" ).then ( () =>
-  load(".env").catch( e => console.warn( `Failed loading '.env' file.`, e ) )
-).catch()
 
 const { data } = await resolveQuery( new TextDecoder('utf8').decode( await Deno.readFile( "test.gql" ) ) )
 console.log( data );
