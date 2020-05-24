@@ -1,6 +1,6 @@
 {
     persons {
-        firstname
-        lastname
+        id
+        username
     }
 }

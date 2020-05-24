@@ -12,7 +12,7 @@
     }
   },
   "watcher": {
-    "exts": ["js", "ts", "json", "gql"],
+    "exts": ["js", "ts", "json", "gql", "graphql"],
     "match": ["*.*"],
     "skip": ["*/.git/*"],
     "legacy": false

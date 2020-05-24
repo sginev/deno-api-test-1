@@ -1,7 +1,15 @@
 type Query {
+  auth: String!
   persons: [Person]
+  person(username:String): Person
 }
+
+interface Node {
+  id: ID!
+}
+
 type Person {
+  id: String!
   lastname: String
   firstname: String
   address: String
